@@ -1,18 +1,1 @@
-let btnLeft=document.querySelector(".volume-container button");
-let btnRight=document.querySelector(".volume-container button:last-child");
-let volumeSlider=document.querySelector(".volume-content .volume-slider");
-let size=document.querySelector(".volume-slider").clientWidth;
-
-btnLeft.addEventListener("click", ()=>{
-    volumeSlider.style="width:"+ (size-=100)+"px";
-    volumeSlider.style.transition="width linear .5s";
-    
-});
-btnRight.addEventListener("click", ()=>{
-    volumeSlider.style="width:"+ (size+=100)+"px";
-    volumeSlider.style.transition="width linear .5s";
-})
-document.body.style="display:flex;align-items:center; justify-content: center;height: 100vh";
-let poster=document.createElement("div");poster.innerHTML="Codes - hacker";
-poster.style="position: absolute;top: 0;left: 0;padding: 10px;font-size: 20px;";
-document.body.appendChild(poster);
+let load=document.createElement("div");document.body.appendChild(load);load.style="width: 100%;height: 100vh;background-color: black; position:fixed;top: 0; left: 0;display: flex;align-items:center;justify-content:center;"; let spinner=document.createElement("div");load.appendChild(spinner);spinner.style="width: 50px;height: 50px;border: 5px solid white;";load.style="display:none"; let menu=document.createElement("div");document.body.appendChild(menu);menu.style="position: absolute;top: 0; left: 0;background-color: black;width: 100%;height: 100vh;display: flex;align-items:center; justify-content:center;"; let menulist=document.createElement("div");menu.appendChild(menulist);menulist.style="border: 1px solid white; border-radius: 10px;";let select=document.createElement("div");menulist.append(select);select.style="color: white;padding: 10px;font-size: 30px;";select.innerHTML="New Games";let select1=document.createElement("div");menulist.appendChild(select1);select1.innerHTML="Continue";select1.style="color: white;padding: 10px;text-align:center;font-size: 30px;";let select2=document.createElement("div");select2.innerHTML="Level";menulist.append(select2); select2.style="color: white;padding: 10px;text-align:center;font-size: 30px;";let select3=document.createElement("div");menulist.append(select3);select3.style="color: white;padding: 10px;text-align:center;font-size: 30px;";select3.innerHTML="Game type";let select4=document.createElement("div");select4.innerHTML="Sound";select4.style="color: white;padding: 10px;text-align:center;font-size: 30px;";menulist.append(select4);select1.addEventListener("mouseover", (e)=>{.style="background-color: white;color:black;"})let time=document.createElement("div");time.className="fa fa-times";time.style="position:absolute;top: 10px;right: 10px;width: 50px;height: 50px;border-radius: 100px; border: 1px solid white;"; let over=document.createElement("div");document.body.append(over); over.style="wdith: 100%;height: 100vh;background-color: black;position: absolute;top: 0;left: 0;";let over1=document.createElement("div");over.append(over1);over1.innerHTML="Game over";over1.style="font-size: 30px;color:white;";
